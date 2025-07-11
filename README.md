@@ -1,6 +1,6 @@
 BERT-Based Anomaly Detection for SWaT Dataset
 Overview
-This project implements a BERT-based anomaly detection framework for the Secure Water Treatment (SWaT) dataset, designed to detect four cyber-physical attacks in Industrial Control Systems (ICS): Network Probing, Command Injection, Parameter Targeting, and Function Code Manipulation. It leverages DistilBERT for multi-class classification, integrates PCAP logs for network-level insights, and uses class-weighted loss to handle the imbalanced dataset (90.83% normal, ~2.5% per attack). The framework achieves a weighted F1-score of ~0.95 and supports real-time detection with ~0.05–0.2s latency, outperforming LSTM (F10.874) and TF-IDF SVM (F1~0.849).
+This project implements a BERT-based anomaly detection framework for the Secure Water Treatment (SWaT) dataset, designed to detect four cyber-physical attacks in Industrial Control Systems (ICS): Network Probing, Command Injection, Parameter Targeting, and Function Code Manipulation. It leverages DistilBERT for multi-class classification, integrates PCAP logs for network-level insights, and uses class-weighted loss to handle the imbalanced dataset (90.83% normal, ~2.5% per attack). The framework achieves a weighted F1-score of ~0.95 and supports real-time detection with 0.05–0.2s latency, outperforming LSTM (F10.874) and TF-IDF SVM (F1~0.849).
 Features
 
 Preprocessing: Converts sensor data and PCAP logs into |-separated text strings for BERT input.
